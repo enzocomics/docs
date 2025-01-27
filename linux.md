@@ -6,4 +6,4 @@
 - `# apt upgrade` - download & install updated packages
 - `df -h` - view disk usage
 
-- `# service status-all` - list all active/inactive services
+- `# service --status-all` - list all active/inactive services

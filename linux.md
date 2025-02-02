@@ -7,3 +7,5 @@
 - `df -h` - view disk usage
 
 - `# service --status-all` - list all active/inactive services
+- `# timedatectl` - display time info
+- `# timedatectl set-timezone America/Vancouver` - change the time zone to PST

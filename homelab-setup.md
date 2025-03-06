@@ -1,4 +1,5 @@
 Start off with a fresh install of Proxmox (Debian).
+- Run post-install scripts ([source](https://community-scripts.github.io/ProxmoxVE/scripts)): `bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"` 
 
 ## **Install Fail2Ban**
 - `apt install fail2ban`

@@ -1,5 +1,14 @@
 Start off with a fresh install of Proxmox (Debian).
-- Run post-install scripts ([source](https://community-scripts.github.io/ProxmoxVE/scripts)): `bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"` 
+- Run post-install scripts ([source](https://community-scripts.github.io/ProxmoxVE/scripts)): `bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"`
+
+## Install [IPMI Fan Control](https://github.com/Nammurg/ipmi_fan_control)
+This is specific to our machine (Lenovo X3650 M5)
+- `apt install ipmitool`
+- `cd /usr/local/bin/`
+- `curl -O https://raw.githubusercontent.com/Nammurg/ipmi_fan_control/refs/heads/main/lenovo_x3650_m5_ipmi_fan_control.sh`
+- `chmod +x /usr/local/bin/lenovo_x3650_m5_ipmi_fan_control.sh`
+- `./lenovo_x3650_m5_ipmi_fan_control.sh`
+
 
 ## **Install Fail2Ban**
 - `apt install fail2ban`

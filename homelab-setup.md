@@ -1,5 +1,6 @@
 Start off with a fresh install of Proxmox (Debian).
 - Run post-install scripts ([source](https://community-scripts.github.io/ProxmoxVE/scripts)): `bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"`
+- Add public ssh key(s) into `/.ssh/authorized_keys`
 
 ## Install [IPMI Fan Control](https://github.com/Nammurg/ipmi_fan_control)
 This is specific to our machine (Lenovo X3650 M5)

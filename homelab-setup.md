@@ -28,7 +28,7 @@ enabled = true
 
 ## **Install Speedtest**
 (Because I wanted to know if my 2.5gb ethernet card was working)
-- `curl` doesn't work directly from github for some reason, so download the file locally: https://github.com/taganaka/SpeedTest/archive/refs/heads/master.zip
+- `curl -OL https://github.com/taganaka/SpeedTest/archive/refs/heads/master.zip` - the `-l` option makes sure the github link redirect is followed
 - From the local folder, copy the zip to the server `scp SpeedTest-master.zip root@server:/root/.`
 - Install dependencies: `apt install zip build-essential libcurl4-openssl-dev libxml2-dev libssl-dev cmake`
 - Open the archive: `unzip SpeedTest-master.zip`

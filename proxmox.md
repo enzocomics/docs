@@ -2,6 +2,7 @@
 - Run the post install script: `bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pve-install.sh)"` - [*source*](https://community-scripts.github.io/ProxmoxVE/scripts?id=post-pve-install&category=Proxmox+%26+Virtualization)
 - Set up SMTP for datacenter notifications
 - Installed Cloudflare's origin certificate onto the node
+- Set up the firewall and open up any required ports (http, https, dns, etc)
 
 
 # How I got my VLAN working with Proxmox

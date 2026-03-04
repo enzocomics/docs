@@ -17,3 +17,7 @@
 4. When creating a new virtual machine, the IP address must be static and set to an available address in the subnet. The gateway must also be set (it's probably `192.168.2.1`). DO NOT specify a VLAN ID during the install.
 5. ???
 6. Profit
+
+# Checkmate
+- Installed Golang by downloading the tar and SCPing it into the server
+- Installed the server monitoring agent Capture [*source*](https://docs.checkmate.so/users-guide/server-monitoring-agent)

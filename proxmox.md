@@ -23,3 +23,4 @@
 - Installed the server monitoring agent Capture [*source*](https://docs.checkmate.so/users-guide/server-monitoring-agent)
   - Run the capture server: `API_SECRET=<secret_token> ./capture &`
   - The `&` will let it run in the background so that exiting the shell won't terminate the process. If you want to kill the process in the future, look for the PID with `ps -C capture` and then kill it with `kill <PID>`
+- Edited `vite.config.js` in the `/opt/checkmate/client` folder and added the app url to `preview.allowedHosts` [*source*](https://vite.dev/config/preview-options)

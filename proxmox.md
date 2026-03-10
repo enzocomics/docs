@@ -31,3 +31,11 @@
   - The `&` will let it run in the background so that exiting the shell won't terminate the process
   - If you want to kill the process in the future, look for the PID with `ps -C capture` and then kill it with `kill <PID>`
 - Edited `vite.config.js` in the `/opt/checkmate/client` folder and added the app url to `preview.allowedHosts` [*source*](https://vite.dev/config/preview-options)
+
+# Network Troubleshooting
+- `lspci | grep Ethernet`: Show the bus id of all the network ports
+- `ip a`: List all the current network interfaces
+- `ethtool -i <interface>`: Shows more info about the network interface, including which bus
+- `ifreload -a`: Refresh the network configuration if you've changed it in `/etc/network/interfaces`
+- `systemctl restart networking`: or just reboot if it still doesn't refresh
+- Don't forget to edit the `/etc/hosts` file if you end up changing the IP address of the host machine

@@ -10,10 +10,8 @@
   -  [Cloudflared](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/configure-tunnels/tunnel-with-firewall/)
   -  [Adguard Home](https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started)
   -  [Unifi Controller](https://help.ui.com/hc/en-us/articles/218506997-Required-Ports-Reference)
-  -  [Checkmate](https://docs.checkmate.so/users-guide/quickstart):
-    - `80` for https
-    - `5173` for client UI
-    - `52345` for server API
+  - Be sure to check that the firewall is checked ON for each network interface
+  - Each VM can also have a firewal, make sure that they are able to talk to each other (when required). Especially if you're using cloudflare tunnel, make sure the tunnel can actually reach the machines it needs to
 
 
 # How I got my VLAN working with Proxmox

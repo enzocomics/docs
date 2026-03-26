@@ -51,3 +51,8 @@ enabled = true
 - Open the archive: `unzip master.zip`
 - Navigate to the folder `cd SpeedTest-master` and then run `cmake -DCMAKE_BUILD_TYPE=Release .` and `make install`
 - Run the program: `SpeedTest`
+
+
+## IMM2 SMTP
+- Must have a DNS server set
+- SMTP reverse-path MUST be the same as the username

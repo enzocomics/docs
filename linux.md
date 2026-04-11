@@ -18,3 +18,8 @@
 
 
 - `curl -O <url_of_file>` - download a file from a URL and save it under the same name 
+
+
+## Power Settings
+- `cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors` - see list of available CPU governor states
+- `echo "powersave" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor` - change the CPU governor state to `powersave`

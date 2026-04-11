@@ -23,3 +23,8 @@
 ## Power Settings
 - `cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors` - see list of available CPU governor states
 - `echo "powersave" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor` - change the CPU governor state to `powersave`
+### Powertop
+  - `apt install powertop`
+  - `powertop --calibrate` - run on first time
+  - `powertop --auto-tune` - tune to Powertop's recommendations
+  - [reference](https://linuxconfig.org/how-to-check-and-tune-power-consumption-with-powertop-on-linux)

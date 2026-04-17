@@ -37,3 +37,15 @@
 - `ifreload -a`: Refresh the network configuration if you've changed it in `/etc/network/interfaces`
 - `systemctl restart networking`: or just reboot if it still doesn't refresh
 - Don't forget to edit the `/etc/hosts` file if you end up changing the IP address of the host machine
+
+# Cloning VMs
+I've only tested this in Ubuntu but I imagine it's similar in other distributions: You can totally use a backup of a VM in a particular state (i.e. fresh install, one with all your SSH keys set up, etc) to create a new VM. But you'll have to change a few things:
+- Give the machine a new ID:
+  ```
+  sudo rm -f /etc/machine-id
+  sudo dbus-uuidgen --ensure=/etc/machine-id
+  sudo rm /var/lib/dbus/machine-id
+  sudo dbus-uuidgen --ensure
+  sudo reboot
+  ```
+- Edit `/etc/netplan/00-installer-config.yaml` to change the IP & MAC address and then `netplan apply` to apply it

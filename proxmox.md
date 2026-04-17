@@ -49,3 +49,4 @@ I've only tested this in Ubuntu but I imagine it's similar in other distribution
   sudo reboot
   ```
 - Edit `/etc/netplan/00-installer-config.yaml` to change the IP & MAC address and then `netplan apply` to apply it
+- Reference: [1](https://www.reddit.com/r/Ubuntu/comments/yqb1y0/cloning_ubuntu_linux_vms_identical_machine_id/) [2](https://linuxvox.com/blog/ubuntu-network-settings-command-line/)

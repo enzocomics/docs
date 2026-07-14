@@ -1,5 +1,6 @@
 # Docker
 - `docker-compose up --build -d`: rebuild all containers
+- `docker exec <container_name> ./cli.js schema snapshot ./snapshot.yaml --format yaml` - export directus schema 
 
 ## Import an SQL file into a Postgres Docker Container
 - `docker cp db-to-import.sql postgres-container:/db-to-import.sql`: copy the file to the root of the container
